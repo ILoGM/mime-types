@@ -67,6 +67,7 @@ class TestMIMEType < Minitest::Test
   def test_class_simplified
     assert_equal('text/plain', MIME::Type.simplified('text/plain'))
     assert_equal('image/jpeg', MIME::Type.simplified('image/jpeg'))
+    assert_equal('image/bmp', MIME::Type.simplified('image/x-ms-bmp'))
     assert_equal('application/msword', MIME::Type.simplified('application/x-msword'))
     assert_equal('text/vcard', MIME::Type.simplified('text/vCard'))
     assert_equal('application/pkcs7-mime', MIME::Type.simplified('application/pkcs7-mime'))

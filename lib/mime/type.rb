@@ -63,7 +63,7 @@ class MIME::Type
 
   # :stopdoc:
   MEDIA_TYPE_RE     = %r{([-\w.+]+)/([-\w.+]*)}o
-  UNREGISTERED_RE   = %r{[Xx]-}o
+  UNREGISTERED_RE   = %r{[Xx]-([msMS-]{3})?}o
   PLATFORM_RE       = %r{#{RUBY_PLATFORM}}o
 
   DEFAULT_ENCODINGS = [ nil, :default ]
